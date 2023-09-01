@@ -84,7 +84,9 @@
     "watch:universal": "npm-run-all -p -r \"build:universal -- -- --watch\" sass:watch",
     "universal": "npm run build:universal && npm run server:universal",
     "universal:aot": "npm run build:universal:aot && npm run server:universal",
-    "universal:watch": "npm run build:universal && npm-run-all -p -r watch:universal server:universal"
+    "universal:watch": "npm run build:universal && npm-run-all -p -r watch:universal server:universal",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "dependencies": {
     "@angular/animations": "~6.0.3",
@@ -122,7 +124,8 @@
     "rxjs": "~6.2.0",
     "script-ext-html-webpack-plugin": "^2.0.1",
     "web-animations-js": "^2.3.1",
-    "zone.js": "~0.8.26"
+    "zone.js": "~0.8.26",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@ngtools/webpack": "6.1.0-beta.1",
@@ -193,5 +196,6 @@
   "bugs": {
     "url": "https://github.com/qdouble/angular-webpack-starter/issues"
   },
-  "homepage": "https://github.com/qdouble/angular-webpack-starter#readme"
+  "homepage": "https://github.com/qdouble/angular-webpack-starter#readme",
+  "snyk": true
 }
