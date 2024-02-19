@@ -115,7 +115,7 @@
     "core-js": "2.5.7",
     "express": "~4.16.2",
     "hammerjs": "~2.0.8",
-    "ip": "~1.1.5",
+    "ip": "~1.1.9",
     "methods": "1.1.2",
     "ngrx-store-freeze": "~0.2.3",
     "ngrx-store-logger": "~0.2.1",
